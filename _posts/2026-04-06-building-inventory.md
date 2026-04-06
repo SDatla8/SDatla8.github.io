@@ -8,7 +8,6 @@ title: "Building Inventory Analysis"
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
 <div id="vis1"></div>
-
 <div id="vis2"></div>
 
 The first plot is a line chart showing the building square footage statistics over time. This visualization is intended to show the trends of the building inventory. Using a log scale allows for small and large values to be visible and prevents large buildings from taking over the visualization.
@@ -30,15 +29,15 @@ The dropdown selection was added to allow users to choose which statistic to hig
 <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv">
     <button type="button" class="btn btn-primary">The Data</button>
 </a>
-<a href="https://github.com/sdatla8/sdatla8.github.io/blob/main/assets/analysis.ipynb">
+<a href="https://github.com/sdatla8/sdatla8.github.io/blob/main/HW5/analysis.ipynb">
     <button type="button" class="btn btn-primary">The Analysis</button>
 </a>
 </div>
 
 <script type="text/javascript">
-  // These paths assume your JSON files are in the 'assets' folder
-  var spec1 = "{{ site.baseurl }}/assets/plot1.json";
-  var spec2 = "{{ site.baseurl }}/assets/plot2.json";
+  // Pointing to your HW5 folder
+  var spec1 = "{{ site.baseurl }}/HW5/plot1.json";
+  var spec2 = "{{ site.baseurl }}/HW5/plot2.json";
   
   vegaEmbed('#vis1', spec1).catch(console.error);
   vegaEmbed('#vis2', spec2).catch(console.error);
