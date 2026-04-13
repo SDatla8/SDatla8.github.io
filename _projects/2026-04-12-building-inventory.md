@@ -12,7 +12,7 @@ custom_js:
 
 # Building Count by Agency and Status
 
-The first plot is a horizontal bar chart showing the distribution of building statuses across different Illinois government agencies. It's meant to highlight which agencies manage the largest portfolios and where those properties currently stand. I used a horizontal orientation so the long agency names stay readable without overlapping.
+The first plot is a horizontal bar chart showing the distribution of building statuses across different Illinois government agencies. It's meant to highlight which agencies manage the largest portfolios and where those properties currently stand. I used a horizontal orientation so the long agency names stay readable without overlapping. If I had more time, I'd probably add a slider to filter by minimum building count so the smaller agencies don't clutter the bottom of the chart.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/hw6-1.json" style="width: 100%"></vegachart>
 
@@ -20,7 +20,7 @@ The first plot is a horizontal bar chart showing the distribution of building st
 
 The second plot is a heatmap exploring the relationship between building usage and current status.
 
-Color encodes the density of buildings within each category. I added panning and zooming so users can navigate the wide range of usage labels without the chart getting cramped. Tooltips show exact building counts on hover, which makes it easy to dig into specific cells without cluttering the view.
+Color encodes the density of buildings within each category. I added panning and zooming so users can navigate the wide range of usage labels without the chart getting cramped. Tooltips show exact building counts on hover, which makes it easy to dig into specific cells without cluttering the view. If I had more time, I'd clean up some of the usage label names since a few are pretty long and awkward, and I'd look into sorting the x-axis by total count so the most common usage types show up first.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/hw6-2.json" style="width: 100%"></vegachart>
 
@@ -44,5 +44,5 @@ Below are the links to the data source and the analysis notebook.
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/yourusername/yourusername.github.io/blob/main/python_notebooks/analysis.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/SDatla8/SDatla8.github.io/blob/main/python_notebooks/hw6.ipynb" text="The Analysis" %}
 </div>
